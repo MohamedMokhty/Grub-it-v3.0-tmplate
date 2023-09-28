@@ -432,6 +432,20 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 
+#grubIT-about .btn-reg{
+  background: #179E66;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+
 .course {
   display: -webkit-box;
   display: -moz-box;
@@ -924,9 +938,10 @@ h1, h2, h3, h4, h5, h6, figure {
 #grubIT-register h2, #grubIT-register h3, #grubIT-register p {
   color: #fff;
 }
-#grubIT-register .btn-reg {
-  background: transparent;
+#grubIT-blog .btn-reg {
+  background: #179E66;
   border: 2px solid #fff;
+  color: #fff;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
