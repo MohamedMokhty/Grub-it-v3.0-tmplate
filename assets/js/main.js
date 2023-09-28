@@ -223,7 +223,7 @@
 			animation: "slide",
 
 			easing: "swing",
-			direction: "vertical",
+			direction: "horizontal",
 
 			slideshowSpeed: 5000,
 			directionNav: true,
@@ -242,11 +242,6 @@
 
 	  	});
 
-	  	// $('#grubIT-hero .flexslider .slides > li').css('height', $(window).height());	
-	  	// $(window).resize(function(){
-	  	// 	$('#grubIT-hero .flexslider .slides > li').css('height', $(window).height());	
-	  	// });
-
 	};
 
 	var parallax = function() {
@@ -261,22 +256,6 @@
 		}
 	};
 
-	var testimonialCarousel = function(){
-		
-		var owl = $('.owl-carousel-fullwidth');
-		owl.owlCarousel({
-			items: 1,
-			loop: true,
-			margin: 0,
-			nav: false,
-			dots: true,
-			smartSpeed: 800,
-			autoHeight: true
-		});
-
-	};
-
-	
 	$(function(){
 		mobileMenuOutsideClick();
 		offcanvasMenu();
