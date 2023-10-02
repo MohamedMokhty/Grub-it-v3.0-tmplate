@@ -223,7 +223,7 @@
 			animation: "slide",
 
 			easing: "swing",
-			direction: "horizontal",
+			direction: "vertical",
 
 			slideshowSpeed: 5000,
 			directionNav: true,
@@ -270,6 +270,4 @@
 		sliderMain();
 		testimonialCarousel();
 	});
-
-
 }());
