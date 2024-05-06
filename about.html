@@ -42,7 +42,7 @@
 <body>
     <div id="page">
         <!-- ===== Navbar ===== -->
-        <nav class="grubIT-nav" role="navigation">
+        <nav class="grubIT-nav" id="navbar"  role="navigation">
             <div class="top">
                 <div class="container">
                     <div class="row">
@@ -67,10 +67,10 @@
                         </div>
                         <div class="col-sm-10 text-end menu-1">
                             <ul>
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="training.html">Training</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li class="active"><a href="index.html">Accueil</a></li>
+                                <li><a href="training.html">Formation</a></li>
+                                <li><a href="about.html">A propos</a></li>
+                                <li><a href="contact.html">Contacts</a></li>
                                 <li class="has-dropdown">
                                     <a href="http://example.com"><span class="flag-icon flag-icon-us"> </span> English</a>
                                     <ul class="dropdown">
@@ -86,25 +86,13 @@
             </div>
         </nav>
         <!-- End Navbar -->
-
         <!-- ===== Hero ===== -->
-        <aside id="grubIT-header" style="background-image: url(assets/images/img_bg_1.jpg); height: 35vh;">
-            <div class="flexslider">
-                <ul class="slides">
-                   <li style="background-image: url(images/img_bg_4.jpg);">
-                       <div class="overlay-gradient"></div>
-                       <div class="container">
-                           <div class="row">
-                               <div class="col-md-8 offset-md-2 text-center slider-text">
-                                   <div class="slider-text-inner">
-                                       <h1 class="heading-section">About Us</h1>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                   </li>
-                  </ul>
-              </div>
+        <aside id="grubIT-header" style="background-image: url(assets/images/abt.webp);  height: 35vh;     background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; z-index: 10;">
+            <div class="container">
+                <div class="text-left">
+                    <h3 class="text-white" style="padding-left: 2.5%; padding-top: 5rem;">Notre Entreprise</h3>
+                </div>
+            </div>
         </aside>
         <!-- End Hero-->
     
@@ -116,13 +104,13 @@
                         <img class="img-fluid " src="assets/images/about.jpg" alt="" style="box-shadow: 20px 20px #179E66; height: 450px;">
                     </div>
                     <div class="col-md-6 animate-box">
-                        <span>About Grub-IT</span>
-                        <h2>We Offer Quality Training to Our Clients</h2>
-                        <p>Grub-IT is a global player in IT training based in Cameroon, and present in France and the United States via partnerships.</p>
-                        <p>A multi-specialist, Grub-IT covers several leading areas of IT to meet the challenges of its clients Infrastructure, Systems, Networks, Development, Cloud computing, Security, Cybersecurity, etc.</p>
-                        <p>Rich in strong values, Grub-IT is a Professional Training Center for IT professions, recognized for the quality of support for its employees and clients (large accounts, higher education institutes, universities, SMEs, students and individuals).</p>
+                        <span>à Propos de Grub-IT</span>
+                        <h2>Nous Offrons des Formations de Qualité à nos Clients</h2>
+                        <p>Grub-IT est un acteur global de la formation en informatique implanté au Cameroun, et présent en France et aux Etats-Unis via des partenariats.</p>
+                        <p>Multi-spécialiste, Grub-IT couvre plusieurs domaines leaders de l'informatique pour répondre aux enjeux de ses clients Infrastructure, Systèmes, Réseaux, Développement, Cloud computing, Sécurité, Cybersécurité, etc.</p>
+                        <p>Riche de valeurs fortes, Grub-IT est un Centre de Formation Professionnel aux Métiers de l'Informatique, reconnu pour la qualité de l’accompagnement de ses collaborateurs et de ses clients (grands comptes, instituts d'enseignement supérieur, universités, pme, étudiants et particuliers).</p>
                         <div class="date-counter">
-                            <p><a href="#" class="btn btn-reg">More Training</a></p>
+                            <p><a href="#" class="btn text-white" style="background-color: #179E66;">Nos Activités > </a></p>
                         </div>
                     </div>
                 </div>
@@ -216,23 +204,6 @@
 	<script src="assets/js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="assets/js/main.js"></script>
-	<script>
-    var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
 
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
-    });
-
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
-    });
-	</script>
 </body>
 </html>

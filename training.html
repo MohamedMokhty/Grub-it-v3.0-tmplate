@@ -48,7 +48,74 @@
 .center_product_1_right ul li a:hover{
  color:#ff8c04;
  }
+ [data-toggle=collapse] i:before {
+  content: "";
+}
+
+[data-toggle=collapse].collapsed i:before {
+  content: "";
+}
+
+#accordion .card-header {
+  margin-bottom: 8px;
+}
+#accordion .accordion-title {
+  position: relative;
+  display: block;
+  padding: 8px 0 8px 50px;
+  background: #e6e7e9;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #323131;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  text-align: left;
+  transition: all 0.4s ease-in-out;
+}
+#accordion .accordion-title i {
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  color: #fff;
+  background: radial-gradient(rgba(33, 55, 68, 0.8), #213744);
+  text-align: center;
+  border-right: 1px solid transparent;
+}
+#accordion .accordion-title:hover {
+  padding-left: 60px;
+  background: #213744;
+  color: #fff;
+}
+#accordion .accordion-title:hover i {
+  border-right: 1px solid #fff;
+}
+#accordion .accordion-body {
+  padding: 40px 55px;
+}
+#accordion .accordion-body ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+#accordion .accordion-body li {
+  padding-left: 1.2rem;
+  text-indent: -1.2rem;
+}
+#accordion .accordion-body li:before {
+  content: "";
+  padding-right: 5px;
+  font-family: "Flaticon";
+  font-size: 16px;
+  font-style: normal;
+  color: #213744;
+}
+ 
     </style>
+
 
 	<!-- Modernizr JS -->
 	<script src="assets/js/modernizr-2.6.2.min.js"></script>
@@ -56,7 +123,7 @@
 <body>
     <div id="page">
         <!-- ===== Navbar ===== -->
-        <nav class="grubIT-nav" role="navigation">
+        <nav class="grubIT-nav" id="navbar"  role="navigation">
             <div class="top">
                 <div class="container">
                     <div class="row">
@@ -81,10 +148,10 @@
                         </div>
                         <div class="col-sm-10 text-end menu-1">
                             <ul>
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="training.html">Training</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li class="active"><a href="index.html">Accueil</a></li>
+                                <li><a href="training.html">Formation</a></li>
+                                <li><a href="about.html">A propos</a></li>
+                                <li><a href="contact.html">Contacts</a></li>
                                 <li class="has-dropdown">
                                     <a href="http://example.com"><span class="flag-icon flag-icon-us"> </span> English</a>
                                     <ul class="dropdown">
@@ -104,7 +171,7 @@
         <!-- ===== Hero ===== -->
         <aside id="grubIT-header" style="background-image: url(assets/images/img_bg_1.jpg); height: 35vh;">
             <div class="container">
-                <div class="text-left">
+                <div class="text-start">
                     <div class="center_product_1_right clearfix">
                         <ul>
                         <li><i class="bi bi-dash-lg"></i></li>
@@ -123,100 +190,81 @@
             <div class="container">
                 <div class="row animate-box">
                     <div class="col-md-3">
-                        <div class="accordion" id="accordionPlusMinus">
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="headingOne">
-                                <button
-                                  class="accordion-button collapsed"
-                                  type="button"
-                                  data-bs-toggle="collapse"
-                                  data-bs-target="#collapseOne"
-                                  aria-expanded="true"
-                                  aria-controls="collapseOne"
-                                >
-                                  All Ttainings
-                                </button>
-                              </h2>
+                        <div id="accordion">
+                            <div class="card border-0">
+                                <div class="card-header p-0 border-0" id="heading-239">
+                                <button class="btn btn-link accordion-title border-0 collapse" data-toggle="collapse" data-target="#collapse-239" aria-expanded="true" aria-controls="#collapse-239">Tout Les Formations </button>
+                              </div>
                             </div>
-                            <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button
-                                class="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne"
-                                aria-expanded="true"
-                                aria-controls="collapseOne"
-                                >
-                                Cloud and Visualisation
-                                </button>
-                            </h2>
+                            <div class="card border-0 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                <div class="card-header p-0 border-0" id="heading-240">
+                                    <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-240" aria-expanded="false" aria-controls="#collapse-240">Cloud et Virtualisation</button>
+                                </div>
                             </div>
-                            <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button
-                                class="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne"
-                                aria-expanded="true"
-                                aria-controls="collapseOne"
-                                >
-                                Grub Workshops
-                                </button>
-                            </h2>
+                            <div class="card border-0 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                <div class="card-header p-0 border-0" id="heading-241">
+                                    <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-241" aria-expanded="false" aria-controls="#collapse-241">Les Ateliers Grub</button>
+                                </div>
                             </div>
-                            <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button
-                                class="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne"
-                                aria-expanded="true"
-                                aria-controls="collapseOne"
-                                >
-                                Maintainance / Support
-                                </button>
-                            </h2>
+                            <div class="card border-0 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                <div class="card-header p-0 border-0" id="heading-242">
+                                    <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-242" aria-expanded="false" aria-controls="#collapse-242">Maintenance / Support</button>
+                                </div>
                             </div>
-                          </div>
+                            <div class="card border-0 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                <div class="card-header p-0 border-0" id="heading-242">
+                                    <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-242" aria-expanded="false" aria-controls="#collapse-242">Nos Cafés IT</button>
+                                </div>
+                            </div>
+                            <div class="card border-0 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                <div class="card-header p-0 border-0" id="heading-242">
+                                    <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-242" aria-expanded="false" aria-controls="#collapse-242">Réseaux</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-9">
                         <div class="row row-padded-mb">
-                            <div class="col-md-12 animate-box">
+                            <div class="col-md-12 mb-4 animate-box">
                                 <div class="grubIT-training">
                                     <div class="date text-center"><i class="bi bi-list-task"></i></div>
-                                    <h3><a href="course-details.html">Linux Pro Administration</a></h3>
-                                    <h5>LPIC-1 <span>(Certifying training)</span></h5>
-                                    <p>Acquire the skills to administer the server and network infrastructure of a company or data center.</p>
+                                    <h3><a href="linux-pro-administration.html">Administration Linux Pro</a></h3>
+                                    <h5>LPIC-1 <span>(Formation Certificant)</span></h5>
+                                    <p>Acquérez les compétences pour administrer l'infrastructure serveurs et réseau d’une entreprise ou d’un datacenter.</p>
                                 </div>
                             </div>
                             <hr style="color: #DFB10D;">
-                            <div class="col-md-12 animate-box">
+                            <div class="col-md-12 mb-4 animate-box">
                                 <div class="grubIT-training">
                                     <div class="date text-center"><i class="bi bi-laptop"></i></div>
-                                    <h3><a href="#">CompTIA A+</a></h3>
-                                    <h5>PC Pro <span>(Certifying training)</span></h5>
-                                    <p>Gain the skills to install, manage and troubleshoot PC hardware and Windows, Linux and MacOS systems</p>
+                                    <h3><a href="comptia-security-plus.html">CompTIA Security+</a></h3>
+                                    <h5>SyEx <span>(Formation certifiante)</span></h5>
+                                    <p>Acquérez les compétences pour évaluer la sécurité d'une entreprise et implémenter des solutions pour le sécuriser.</p>
                                 </div>
                             </div>
                             <hr style="color: #DFB10D;">
-                            <div class="col-md-12 animate-box">
+                            <div class="col-md-12  mb-4 animate-box">
                                 <div class="grubIT-training">
                                     <div class="date text-center"><i class="bi bi-list-task"></i></div>
-                                    <h3><a href="#">Linux Pro Administration</a></h3>
-                                    <h5>LPIC-1 <span>(Certifying training)</span></h5>
-                                    <p>Acquire the skills to administer the server and network infrastructure of a company or data center.</p>
+                                    <h3><a href="infra-reseau-linux.html">Infra Reseau Linux</a></h3>
+                                    <h5>IRL210</h5>
+                                    <p>Déployez une infrastructure réseau sécurisée ainsi que les services de base associés, à l'échelle d'une entreprise</p>
                                 </div>
                             </div>
                             <hr style="color: #DFB10D;">
-                            <div class="col-md-12 animate-box">
+                            <div class="col-md-12  mb-4 animate-box">
                                 <div class="grubIT-training">
                                     <div class="date text-center"><i class="bi bi-list-task"></i></div>
-                                    <h3><a href="#">Linux Pro Administration</a></h3>
+                                    <h3><a href="comptia-network-plus.html">CompTIA Network +</a></h3>
+                                    <h5>Certifying training</h5>
+                                </div>
+                            </div>
+                            <hr style="color: #DFB10D;">
+                            <div class="col-md-12  mb-4 animate-box">
+                                <div class="grubIT-training">
+                                    <div class="date text-center"><i class="bi bi-list-task"></i></div>
+                                    <h3><a href="comptia-network-plus.html">DevOps</a></h3>
                                     <h5>LPIC-1 <span>(Certifying training)</span></h5>
-                                    <p>Acquire the skills to administer the server and network infrastructure of a company or data center.</p>
                                 </div>
                             </div>
                         </div>

@@ -28,6 +28,24 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
+.offcanvas #page {
+  overflow: hidden;
+  position: absolute;
+}
+.offcanvas #page:after {
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 101;
+  background: rgba(0, 0, 0, 0.7);
+  content: "";
+}
 a {
   color:  rgba(5, 5, 87, 0.3);;
   -webkit-transition: 0.5s;
@@ -886,6 +904,21 @@ h1, h2, h3, h4, h5, h6, figure {
 .grubIT-blog .blog-text .btn-blog:hover {
   color: #fff !important;
 }
+.blog-content {
+    margin-bottom: 30px; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    margin: 3rem 2rem;
+}
+.grubIT-blog .owl-carousel .owl-nav { display: none; }
+.grubIT-blog .owl-carousel .owl-item img { width: inherit; display: inline; }
+.grubIT-blog .owl-theme .owl-dots { text-align: center !important; position: relative; bottom: -30px; }
+.grubIT-blog .owl-theme .owl-dots .owl-dot { display: inline-block; zoom: 1; }
+.grubIT-blog .owl-theme .owl-dots .owl-dot span { width: 10px; height: 10px; margin: 5px 4px; background: #e8e8e8; border-radius: 0px; border: 2px solid #e8e8e8; display: block; -webkit-backface-visibility: visible; transition: opacity 200ms ease; }
+.grubIT-blog .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span { background-color: #099ABA; border: 2px solid #099ABA; }
+.grubIT-blog .owl-theme .owl-carousel .owl-item img { width: 100%; }
 
 #grubIT-register {
   background-size: cover;

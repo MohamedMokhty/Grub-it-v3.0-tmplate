@@ -22,9 +22,9 @@
 	<link rel="stylesheet" href="assets/css/magnific-popup.css">
 
 	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.default.css" rel="stylesheet">
 	<!-- Flexslider  -->
 	<link rel="stylesheet" href="assets/css/flexslider.css">
 
@@ -42,7 +42,7 @@
 <body>
     <div id="page">
         <!-- ===== Navbar ===== -->
-        <nav class="grubIT-nav" role="navigation">
+        <nav class="grubIT-nav" id="navbar"  role="navigation">
             <div class="top">
                 <div class="container">
                     <div class="row">
@@ -67,10 +67,10 @@
                         </div>
                         <div class="col-sm-10 text-end menu-1">
                             <ul>
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="training.html">Training</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li class="active"><a href="index.html">Accueil</a></li>
+                                <li><a href="training.html">Formation</a></li>
+                                <li><a href="about.html">A propos</a></li>
+                                <li><a href="contact.html">Contacts</a></li>
                                 <li class="has-dropdown">
                                     <a href="http://example.com"><span class="flag-icon flag-icon-us"> </span> English</a>
                                     <ul class="dropdown">
@@ -95,12 +95,12 @@
                        <div class="overlay-gradient"></div>
                        <div class="container">
                            <div class="row">
-                               <div class="col-md-8 offset-md-2 text-center slider-text">
+                               <div class="col-md-6 offset-md-3 text-center slider-text">
                                     <div class="slider-text-inner">
-                                        <h1>A professional training center for IT professions</h1>
-                                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                                            adipisci iusto totam placeat corrupti ipsum</h2>
-                                        <p><a class="btn btn-primary btn-lg" href="#" style="background-color: #179E66;">Start Learning Now!</a></p>
+                                        <h1>Un centre de formation professionel aux métiers de l'informatique</h1>
+                                        <h2>Virtualisation, cloud systems, reseaux, data sécurité, cybersécurité, maintenance, support gouvernance, gestion des projets
+                                        </h2>
+                                        <p><a class="btn btn-primary btn-lg btn-learn" href="training.html" style="background-color: #179E66;">Toutes les formations!</a></p>
                                     </div>
                                </div>
                            </div>
@@ -110,11 +110,12 @@
                        <div class="overlay-gradient"></div>
                        <div class="container">
                            <div class="row">
-                               <div class="col-md-8 offset-md-2 text-center slider-text">
+                               <div class="col-md-6 offset-md-3 text-center slider-text">
                                    <div class="slider-text-inner">
-                                       <h1>The Great Aim of Education is not Knowledge, But Action</h1>
-                                        <h2>Brought to you by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-                                        <p><a class="btn btn-primary btn-lg btn-learn" href="#" style="background-color: #179E66;">Start Learning Now!</a></p>
+                                       <h1>Connaissances et compétences n'ont jamais été aussi accessibles</h1>
+                                       <h2>24/7, Accédez à des pedagogiques disponibles enligne et profitez de l'accompagnement de nos formateurs.
+                                       </h2>
+                                       <p><a class="btn btn-primary btn-lg btn-learn" href="training.html" style="background-color: #179E66;">Toutes les formations!</a></p>
                                    </div>
                                </div>
                            </div>
@@ -124,11 +125,11 @@
                        <div class="overlay-gradient"></div>
                        <div class="container">
                            <div class="row">
-                               <div class="col-md-8 offset-md-2 text-center slider-text">
+                               <div class="col-md-6 offset-md-3 text-center slider-text">
                                    <div class="slider-text-inner">
-                                       <h1>We Help You to Learn New Things</h1>
-                                        <h2>Brought to you by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-                                        <p><a class="btn btn-primary btn-lg btn-learn" href="#" style="background-color: #179E66;">Start Learning Now!</a></p>
+                                       <h1>Nos formateurs sont de véritables consultants experts.</h1>
+                                       <h2>Nous allions cours théoriques, retours d'experiences et Démonstrations sur site pour un apprentissage en conditions réelles</h2>
+                                        <p><a class="btn btn-primary btn-lg btn-learn" href="training.html" style="background-color: #179E66;">Toutes les formations!</a></p>
                                    </div>
                                </div>
                            </div>
@@ -141,43 +142,71 @@
 
         <!-- ===== Courses ===== -->
         <div id="grubIT-blog">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4">
-                        <div class="grubIT-blog animate-box">
+                <div class="owl-carousel owl-two owl-theme container">
+                    <div class="training-thumbnail">
+                        <div class="grubIT-blog blog-content animate-box">
+                            <a href="linux-pro-administration.html" class="blog-img-holder" style="background-image: url(assets/images/linux.jpg);"></a>
+                            <div class="blog-text mb-3">
+                                <h3><a href="linux-pro-administration.html">Administration Linux Pro</a></h3>
+                                <p>Acquérez les compétences pour administrer l'infrastructure serveurs et réseau d’une entreprise ou d’un datacenter.</p>
+                                <span class="comment"><i class="bi bi-arrow-right-circle"></i><a href="">Voir Plus</a></span>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="training-thumbnail">
+                        <div class="grubIT-blog blog-content animate-box">
+                            <a href="comptia-security-plus.html" class="blog-img-holder" style="background-image: url(assets/images/ImageSecurity+.jpg);"></a>
+                            <div class="blog-text mb-3">
+                                <h3><a href="comptia-security-plus.html">CompTIA Security+</a></h3>
+                                <p>Acquérez les compétences pour évaluer la sécurité d'une entreprise et implémenter des solutions pour le sécuriser.</p>
+                                <span class="comment"><i class="bi bi-arrow-right-circle"></i><a href="">See More</a></span>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="training-thumbnail">
+                        <div class="grubIT-blog blog-content animate-box">
                             <a href="#" class="blog-img-holder" style="background-image: url(assets/images/linuxni.jpg);"></a>
                             <div class="blog-text mb-3">
-                                <h3><a href="#">Linux Network Infrastructure</a></h3>
-                                <p>Deploy secure network infrastructure and associated core services at enterprise scale</p>
+                                <h3><a href="infra-reseau-linux.html">Infra Réseau Linux</a></h3>
+                                <p>Déployez une infrastructure réseau sécurisée ainsi que les services de base associés, à l'échelle d'une entreprise</p>
                                 <span class="comment"><i class="bi bi-arrow-right-circle"></i><a href="">See More</a></span>
                             </div> 
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="grubIT-blog animate-box">
-                            <a href="#" class="blog-img-holder" style="background-image: url(assets/images/CySA.jpg);"></a>
+                    <div class="training-thumbnail">
+                        <div class="grubIT-blog blog-content animate-box">
+                            <a href="linux-pro-administration.html" class="blog-img-holder" style="background-image: url(assets/images/linux.jpg);"></a>
                             <div class="blog-text mb-3">
-                                <h3><a href="#">CompTIA Cybersecurity Analyst</a></h3>
-                                <p>Implement and analyze vulnerability assessments, and make recommendations to mitigate attacks.</p>
+                                <h3><a href="linux-pro-administration.html">Administration Linux Pro</a></h3>
+                                <p>Acquérez les compétences pour administrer l'infrastructure serveurs et réseau d’une entreprise ou d’un datacenter.</p>
+                                <span class="comment"><i class="bi bi-arrow-right-circle"></i><a href="">Voir Plus</a></span>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="training-thumbnail">
+                        <div class="grubIT-blog blog-content animate-box">
+                            <a href="comptia-security-plus.html" class="blog-img-holder" style="background-image: url(assets/images/ImageSecurity+.jpg);"></a>
+                            <div class="blog-text mb-3">
+                                <h3><a href="comptia-security-plus.html">CompTIA Security+</a></h3>
+                                <p>Acquérez les compétences pour évaluer la sécurité d'une entreprise et implémenter des solutions pour le sécuriser.</p>
                                 <span class="comment"><i class="bi bi-arrow-right-circle"></i><a href="">See More</a></span>
                             </div> 
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="grubIT-blog animate-box">
-                            <a href="#" class="blog-img-holder" style="background-image: url(assets/images/WS2019.jpg);"></a>
+                    <div class="training-thumbnail">
+                        <div class="grubIT-blog blog-content animate-box">
+                            <a href="#" class="blog-img-holder" style="background-image: url(assets/images/linuxni.jpg);"></a>
                             <div class="blog-text mb-3">
-                                <h3><a href="#">Windows Server 2019</a></h3>
-                                <p>Acquire the skills to administer a company's server and network infrastructure using Windows Server.</p>
+                                <h3><a href="infra-reseau-linux.html">Infra Réseau Linux</a></h3>
+                                <p>Déployez une infrastructure réseau sécurisée ainsi que les services de base associés, à l'échelle d'une entreprise</p>
                                 <span class="comment"><i class="bi bi-arrow-right-circle"></i><a href="">See More</a></span>
                             </div> 
                         </div>
                     </div>
                 </div>
                 <div class="date-counter text-center">
-                    <p><a href="#" class="btn btn-reg">More Training</a></p>
+                    <p><a href="training.html" class="btn btn-reg">More Training</a></p>
                 </div>
-            </div>
         </div>
         <!-- End Courses -->
 
@@ -191,7 +220,7 @@
 	                        <p class="pt-4">ITs at your fingertips, come, ask and let’s share our expertise together</p>
                         
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 grubIT-widget">
+                    <div class="col-md-2 col-sm-4 col-sm-6 col-md-push-1 grubIT-widget">
                         <h3>Menu</h3>
                         <ul class="grubIT-footer-links">
                             <li class="mb-2"><a href="#">Home</a></li>
@@ -201,7 +230,7 @@
                         </ul>
                     </div>
     
-                    <div class="col-md-4 col-xs-12 col-md-push-1 grubIT-widget">
+                    <div class="col-md-4 col-sm-12 col-md-push-1 grubIT-widget">
                         <h3>Galerie</h3>
                         <div class="row">
                             <div class="col-lg-2 col-3">
@@ -225,7 +254,7 @@
                         </div>
                     </div>
     
-                    <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 grubIT-widget">
+                    <div class="col-md-2 col-sm-4 col-sm-6 col-md-push-1 grubIT-widget">
                         <h3>Contacts</h3>
                         <p>Contact us, we are here to listen to you</p>
                     </div>
@@ -256,7 +285,8 @@
 	<!-- Stellar Parallax -->
 	<script src="assets/js/jquery.stellar.min.js"></script>
 	<!-- Carousel -->
-	<script src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/multiple-carousel.js"></script>
 	<!-- Flexslider -->
 	<script src="assets/js/jquery.flexslider-min.js"></script>
 	<!-- countTo -->

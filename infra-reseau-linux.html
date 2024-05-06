@@ -48,6 +48,15 @@
 .center_product_1_right ul li a:hover{
  color:#ff8c04;
  }
+
+ .nav-pills .nav-link{
+    color:#444443;
+    font-weight: 700;
+ }
+
+ .nav-pills .nav-link .active{
+   background-color: #DFB10D;
+ }
     </style>
 
 	<!-- Modernizr JS -->
@@ -56,7 +65,7 @@
 <body>
     <div id="page">
         <!-- ===== Navbar ===== -->
-        <nav class="grubIT-nav" role="navigation">
+        <nav class="grubIT-nav" id="navbar"  role="navigation">
             <div class="top">
                 <div class="container">
                     <div class="row">
@@ -67,7 +76,7 @@
                                     <li><a href="#"><i class="icon-facebook2"></i></a></li>
                                     <li><a href="#"><i class="icon-twitter2"></i></a></li>
                                     <li><a href="#"><i class="icon-linkedin2"></i></a></li>
-                                  
+                                    
                                 </ul>
                         </div>
                     </div>
@@ -81,10 +90,10 @@
                         </div>
                         <div class="col-sm-10 text-end menu-1">
                             <ul>
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="training.html">Training</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li class="active"><a href="index.html">Accueil</a></li>
+                                <li><a href="training.html">Formation</a></li>
+                                <li><a href="about.html">A propos</a></li>
+                                <li><a href="contact.html">Contacts</a></li>
                                 <li class="has-dropdown">
                                     <a href="http://example.com"><span class="flag-icon flag-icon-us"> </span> English</a>
                                     <ul class="dropdown">
@@ -99,8 +108,7 @@
                 </div>
             </div>
         </nav>
-        <!-- End Navbar -->
-
+        <!--  NAVBAR --> 
         <!-- ===== Hero ===== -->
         <aside id="grubIT-header" style="background-image: url(assets/images/img_bg_1.jpg); height: 35vh;">
             <div class="container">
@@ -108,12 +116,13 @@
                     <div class="center_product_1_right clearfix">
                         <ul>
                         <li><i class="bi bi-dash-lg"></i></li>
-                         <li><a href="#">Home <i class="bi bi-chevron-right"></i></a></li>
-                         <li>Training <i class="bi bi-chevron-right"></i></li>
-                         <li>Course Details <i class="bi bi-chevron-right"></i></li>
+                         <li><a href="#">Accueil <i class="bi bi-chevron-right"></i></a></li>
+                         <li>Catalogue <i class="bi bi-chevron-right"></i></li>
+                         <li>Réseaux <i class="bi bi-chevron-right"></i></li>
+                         <li>Formation </li>
                         </ul>
                     </div>
-                    <h3 class="text-white" style="padding-left: 2.5%;">LPIC-1</h3>
+                    <h3 class="text-white" style="padding-left: 2.5%;">IRL210</h3>
                 </div>
             </div>
         </aside>
@@ -123,112 +132,137 @@
             <div class="container">
                 <div class="row animate-box">
                     <div class="col-md-9">
-                        <span class="bg-warning p-2 rounded-5">Session(s) available</span>
-                        <h2>Linux Pro Administration</h2>
-                        <h5 class="text-warning">Certification Training</h5>
-                        <p>This very high technical level training  aims to give you the knowledge and skills necessary to administer a GNU/Linux system whatever the distribution. It gives you skills in terms of server infrastructure administration, network administration and the basic services associated with it.</p>
-                        <p>This LPIC-1 ( <span> Professional Linux Administrator </span>) certification program from the Linux Professional Institute is known to recruiters as being an official recognition of qualification, competence and ability to occupy an Administrator position.  </p>
+                        <span class="bg-warning p-2 rounded-5">Session(s) disponible</span>
+                        <h2>Infra Réseau Linux</h2>
+                        <h5 class="text-warning">Formation</h5>
+                        <p>Cet atelier de 03 jours est un apprentissage en conditions réelles conçu pour vous donner les compétences nécessaires pour gérer une infrastructure informatique professionnelle à l'aide d'outils open source à l'échelle d'une entreprise. </p>
+                        <p>Cette formation essentiellement pratique est un véritable guide pour tous ceux qui veulent acquérir les aptitudes techniques pour déployer et administrer une infrastructure réseau et les services qui y sont associés.</p>
                         <div>
                             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                  <button class="nav-link active" id="pills-goals-tab" data-bs-toggle="pill" data-bs-target="#pills-goals" type="button" role="tab" aria-controls="pills-goals" aria-selected="true">Goals</button>
+                                  <button class="nav-link active" id="pills-goals-tab" data-bs-toggle="pill" data-bs-target="#pills-goals" type="button" role="tab" aria-controls="pills-goals" aria-selected="true">Objectifs</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                  <button class="nav-link" id="pills-program-tab" data-bs-toggle="pill" data-bs-target="#pills-program" type="button" role="tab" aria-controls="pills-program" aria-selected="false">Program</button>
+                                  <button class="nav-link" id="pills-program-tab" data-bs-toggle="pill" data-bs-target="#pills-program" type="button" role="tab" aria-controls="pills-program" aria-selected="false">Programme</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                  <button class="nav-link" id="pills-public-admitted-tab" data-bs-toggle="pill" data-bs-target="#pills-public-admitted" type="button" role="tab" aria-controls="pills-public-admitted" aria-selected="false">Public admitted</button>
+                                  <button class="nav-link" id="pills-public-admitted-tab" data-bs-toggle="pill" data-bs-target="#pills-public-admitted" type="button" role="tab" aria-controls="pills-public-admitted" aria-selected="false">Publicadmis</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-fashion-tab" data-bs-toggle="pill" data-bs-target="#pills-fashion" type="button" role="tab" aria-controls="pills-fashion" aria-selected="false">Fashion</button>
+                                    <button class="nav-link" id="pills-fashion-tab" data-bs-toggle="pill" data-bs-target="#pills-fashion" type="button" role="tab" aria-controls="pills-fashion" aria-selected="false">Mode</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-language-tab" data-bs-toggle="pill" data-bs-target="#pills-language" type="button" role="tab" aria-controls="pills-language" aria-selected="false">Language</button>
+                                    <button class="nav-link" id="pills-language-tab" data-bs-toggle="pill" data-bs-target="#pills-language" type="button" role="tab" aria-controls="pills-language" aria-selected="false">Langue</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-other-information-tab" data-bs-toggle="pill" data-bs-target="#pills-other-information" type="button" role="tab" aria-controls="pills-other-information" aria-selected="false">Other Information</button>
+                                    <button class="nav-link" id="pills-other-information-tab" data-bs-toggle="pill" data-bs-target="#pills-other-information" type="button" role="tab" aria-controls="pills-other-information" aria-selected="false">Autre Informations</button>
                                 </li>
                               </ul>
                               <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-goals" role="tabpanel" aria-labelledby="pills-goals-tab">
-                                    <h2>Training aims</h2>
-                                    <p>You will learn, among other things, how to install and configure server infrastructures, and to guarantee the availability and sustainability of the information stored in these servers.</p>
-                                    <p>At the end of the training, the participant will be able to:</p>
+                                    <h2>Objectifs de la formation</h2>
+                                    <p>À l’issue de la formation, le participant sera en mesure de :</p>
                                     <ul>
-                                        <li>At the end of the training, the participant will be able to:</li>
-                                        <li>Manage common disks, partitions and file systems</li>
-                                        <li>Install and configure a GNU/Linux system on a PC and Server type station</li>
+                                        <li>Configurer des interfaces réseaux</li>
+                                        <li>Installer et Configurer un Serveur DHCP</li>
+                                        <li>Déployer un Serveur DNS</li>
                                     </ul>
                                     <ul>
-                                        <li>Use the system's systemd runlevels and targets</li>
-                                        <li>Install and uninstall programs on distributions of the RedHat and Debian families </li>
-                                        <li>Perform backups and updates</li>
+                                        <li>Configurer le Routage et la Passerelle (NAT)</li>
+                                        <li>Installer et Configurer un Partage Windows/Linux avec Samba</li>
+                                        <li>Déployer un Serveur Web (Apache, PHP) et des Hôtes Virtuels</li>
                                     </ul>
+                                    <ul>
+                                        <li>Déployer un Serveur MariaDB et y créer des Bases de Données</li>
+                                        <li>Effectuer la Sauvegarde, la Réplication sur un site distant, et la Restauration de BD à l'aide de scripts</li>
+                                        <li>Etc.</li>
+                                    </ul>
+                                    <p>Cet atelier vise aussi à édifier le participant sur quelques outils de sécurité d'une infrastructure réseau informatique (pare-feux, IDS, IPS, etc).</p>
                                 </div>
                                 <div class="tab-pane fade" id="pills-program" role="tabpanel" aria-labelledby="pills-program-tab">
-                                    <h5>Course Map</h5>
-                                    <p>Chapter 1: File Systems and Partitioning</p>
+                                    <h5>Plan du cours</h5>
+                                    <p>Chapitre 1 : Introduction</p>
                                     <ul>
-                                        <li>1.1: File Systems</li>
-                                        <li>1.2: Partition Management</li>
-                                        <li>1.3: System Integrity Management</li>
-                                        <li>1.4: GRUB</li>
-                                        <li>1.5: Disk Partitioning Scheme and Optimal Linux Installation</li>
+                                        <li>1.1 : Présentation du Système GNU/Linux</li>
+                                        <li>1.2 : Etude de Quelques Commandes</li>
+                                    </ul>
+                                    <p>Chapitre 2 : Infrastructure Réseau et Sécurité</p>
+                                    <ul>
+                                        <li>2.1 : Rappel : Adressage, Sous-Réseaux, Ports, Protocoles TCP/IP</li>
+                                        <li>2.2 : Configuration des Interfaces Réseaux</li>
+                                        <li>2.3 : DHCP : Installation et Configuration du Serveur </li>
+                                        <li>2.4 : DHCP : Configuration Avancée</li>
+                                        <li>2.5 : Déploiement du Serveur DNS</li>
+                                        <li>2.6 : Routage et Passerelle (NAT)</li>
+                                        <li>2.7 : Configuration de OpenSSH</li>
+                                        <li>2.8 : Sécurité : Pare-feux, IDS, IPS</li>
+                                    </ul>
+                                    <p>Chapitre 3 : Services Réseaux</p>
+                                    <ul>
+                                        <li>3.1 : Partage Sécurisé Windows/Linux avec Samba</li>
+                                        <li>3.2 : Déploiement d'un Serveur FTP Sécurisé</li>
+                                        <li>3.3 : Déploiement d'un Serveur Web (Apache, PHP) + Hôtes Virtuels</li>
+                                        <li>3.4 : Mise en Place d'un Serveur NTP</li>
+                                    </ul>
+                                    <p>Chapitre 4 : Déploiement de MariaDB</p>
+                                    <ul>
+                                        <li>4.1 : Installation et Configuration du Serveur</li>
+                                        <li>4.2 : Exploitation Basique</li>
+                                        <li>4.3 : Sauvegarde, Réplication et Restauration de Base de Données à l'aide de Scripts</li>
                                     </ul>
                                 </div>
                                 <div class="tab-pane fade" id="pills-public-admitted" role="tabpanel" aria-labelledby="pills-public-admitted-tab">
-                                    <h5>Public admitted</h5>
+                                    <h5>Public Admis</h5>
                                     <ul>
-                                        <li>Computer science students</li>
-                                        <li>Support Engineers</li>
-                                        <li>System Administrators</li>
-                                        <li>Network Administrators</li>
-                                        <li>Database Administrators</li>
-                                        <li>IT projects managers</li>
+                                        <li>Étudiants en informatique</li>
+                                        <li>Techniciens et Administrateurs Système et Réseau</li>
+                                        <li>Techniciens et Ingénieurs Support Informatique</li>
+                                        <li>Techniciens en Sécurité Informatique</li>
+                                    </ul>
+                                    <h5>Prérequis</h5>
+                                    <ul>
+                                        <li>Connaissances de base de l'utilisation d'un système Linux ou Unix ;</li>
+                                        <li>Connaître l’intérêt d’un réseau ;</li>
+                                        <li>un Ordinateur Personnel avec Linux installé, quelle que soit la distribution.</li>
                                     </ul>
                                 </div>
                                 <div class="tab-pane fade" id="pills-fashion" role="tabpanel" aria-labelledby="pills-fashion-tab">
-                                    <h5>Training mode</h5>
+                                    <h5>Mode de formation</h5>
                                     <ul>
-                                        <li><span>In the Center: </span>The physical presence of the participant is required on the site at each session.</li>
+                                        <li><span>En Centre: </span>La présence physique du participant est requise sur le site à chaque séance.</li>
                                     </ul>
-                                    <h6>Note:</h6>  <span>This training is also offered remotely.</span>
                                 </div>
                                 <div class="tab-pane fade" id="pills-language" role="tabpanel" aria-labelledby="pills-language-tab">
-                                    <h5>Language</h5>
+                                    <h5>Langue</h5>
                                     <ul>
-                                        <li>The training is entirely provided in French,</li>
-                                        <li>The exercises and practical work are handled in French</li>
-                                        <li>The training materials are written in French .</li>
+                                        <li>La formation est entièrement dispensée en Français,</li>
+                                        <li>Les exercices et les travaux pratiques sont traités en Français,</li>
                                     </ul>
                                 </div>
                                 <div class="tab-pane fade" id="pills-other-information" role="tabpanel" aria-labelledby="pills-other-information">
-                                    <h5>Teaching Methods</h5>
-                                    <p>Our trainers are true expert consultants, with solid theoretical engineering training, supplemented by many years of experience and professional certifications. Our educational tools are adapted and chosen according to the educational project.</p>
-                                    <p>This training is composed of:</p>
+                                    <h5>Méthodes Pédagogiques</h5>
+                                    <p>Nos formateurs sont de véritables consultants experts, dotés d'une solide formation théorique d'ingénieurs, complétée par de nombreuses années d’expérience et de certifications professionnelles.  Nos outils pédagogiques sont adaptés et choisis en fonction du projet pédagogique</p>
+                                    <p>Cette formation est composée de :</p>
                                     <ul>
-                                        <li>Courses supplemented by Demonstrations</li>
-                                        <li>Exercises and Practical Work;</li>
-                                        <li>Course materials;</li>
-                                        <li>Laboratories;</li>
-                                        <li>Preparation kits (mock exams).</li>
+                                        <li>Cours complétés par des Démonstrations</li>
+                                        <li>Travaux Pratiques ;</li>
+                                        <li>Laboratoires et Exercices.</li>
                                     </ul>
-                                    <p>At the end of the training, each participant automatically benefits from <span>20 days of coaching</span> intended to provide follow-up for students wishing to take the <span>LPI101</span> and <span>LPI102</span> exams .</p>
                                 </div>
                               </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <a href="#" class="text-primary">See All Sessions >></a>
+                        <a href="session.html" class="text-primary">Voir toutes les sessions >></a>
                         <hr>
-                        <a href="#" class="text-primary">Session of: December 11, 2023 in</a>
+                        <a href="#" class="text-primary">Session du: 11 Décembre 2023 à </a>
                         <hr>
-                        <p><span>Location:</span>10 Rue 02, Commune of Limete, Q/Industriel, Kinshassa (DRC)</p>
-                        <p><span>Duration:</span>10 Days</p>
-                        <p><span>Mode:</span> In the center</p>
-                        <p><span>Price:</span>300,000 FCFA</p>
-                        <p><span>Lamguage:</span>French</p>
-                        <a href="#" class="text-primary">I am registering for this session</a>
+                        <p><span>Lieu:</span>10 Rue 02, Commune of Limete, Q/Industriel, Kinshassa (DRC)</p>
+                        <p><span>Durée:</span>10 jours</p>
+                        <p><span>Mode:</span> En centre</p>
+                        <p><span>Prix:</span> 300,000 FCFA</p>
+                        <p><span>Langue:</span> Français</p>
+                        <a href="#" class="text-primary">Je m'inscris à cette session</a>
                         <hr>
                         <a href="#" class="text-primary"><i class="bi bi-file-earmark-arrow-down-fill"></i>Download</a>
                     </div>

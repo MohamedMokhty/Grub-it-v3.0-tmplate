@@ -2,6 +2,28 @@
 	
 	'use strict';
 
+	const responsive = {
+		0: {
+			items: 1
+		},
+		320: {
+			items: 1
+		},
+		560: {
+			items: 2
+		},
+		960: {
+			items: 3
+		}
+	}
+
+	    // owl-crousel for blog
+        $('.owl-carousel').owlCarousel({
+
+			navigation : true,
+			responsive : responsive
+          });
+
 	var isMobile = {
 		Android: function() {
 			return navigator.userAgent.match(/Android/i);
@@ -242,6 +264,11 @@
 
 	  	});
 
+	  	// $('#grubIT-hero .flexslider .slides > li').css('height', $(window).height());	
+	  	// $(window).resize(function(){
+	  	// 	$('#grubIT-hero .flexslider .slides > li').css('height', $(window).height());	
+	  	// });
+
 	};
 
 	var parallax = function() {
@@ -256,6 +283,22 @@
 		}
 	};
 
+	var testimonialCarousel = function(){
+		
+		var owl = $('.owl-carousel-fullwidth');
+		owl.owlCarousel({
+			items: 1,
+			loop: true,
+			margin: 0,
+			nav: false,
+			dots: true,
+			smartSpeed: 800,
+			autoHeight: true
+		});
+
+	};
+
+	
 	$(function(){
 		mobileMenuOutsideClick();
 		offcanvasMenu();
@@ -270,4 +313,6 @@
 		sliderMain();
 		testimonialCarousel();
 	});
+
+
 }());
